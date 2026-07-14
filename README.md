@@ -1,4 +1,4 @@
-This is one of my OOP projects that I've done when I was still working with Oracle.
+This is one of my projects that I've done when I was still working with Oracle.
 
 This notification system (with the 'notification.py' as the main program), is automatically sending 
 a notification/alert message to user once an error (defined in 'errorfile.yml') has been encountered.
