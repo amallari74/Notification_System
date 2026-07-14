@@ -1,0 +1,55 @@
+OSPatch:
+    id: "Suggestion on what to check for failure in such cases"
+    cause: "Reason for this failure to occur"                    #
+    comments: "Any other relevant pointers"                      # any helpful links or scripts which can help to remediate the situation
+    message: "Unexpected internal error"                         # descriptive error message, should include templating so that we can have error message like                                                                            
+                                                                 # "Command uptime failed" instead of "command failed"
+    type: error                                                  # indicates if its a error, warning and should it be retried
+    criticality: high                                            # used to set notification criticality level, defaulted to medium for error,low for warning
+    
+OSPatch-submodule2-200:
+    id: "Suggestion on what to check for failure in such cases"
+    cause: "Reason for this failure to occur"
+    comments: "Any other relevant pointers"
+    message: "External command %s failed"
+    type: retry
+    criticality: medium  
+
+OSPatch-submodule3-200:
+    id: "Suggestion on what to check for failure in such cases"
+    cause: "Reason for this failure to occur"
+    comments: "Any other relevant pointers"
+    message: "External command %s failed"
+    type: retry
+    criticality: medium
+    
+BugFix:
+    id: "Suggestion on what to check for failure in such cases"
+    cause: "Reason for this failure to occur"
+    comments: "Any other relevant pointers"
+    message: "External command %s failed"
+    type: retry
+    criticality: medium
+Migration:
+    id: "Suggestion on what to check for failure in such cases"
+    cause: "Reason for this failure 2 to occur"
+    comments: "Any other relevant pointers"
+    message: "Failure reason 2"
+    type: warning
+    criticality: medium
+submodule2:
+  200:
+  message: "Error in submodule2 of type 200"
+  cause:  "Reason for this failure to occur"
+  action: "Suggestion on what to check for failure in such cases"
+  comments: "Any other relevant pointers"
+  type: abort
+  criticality: medium
+submodule3:
+  200:
+  message: "Error in submodule3 of type 300"
+  cause:  "Reason for this failure to occur"
+  action: "Suggestion on what to check for failure in such cases"
+  comments: "Any other relevant pointers"
+  criticality: medium
+  type: abort

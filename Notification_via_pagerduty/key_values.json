@@ -1,0 +1,7 @@
+{
+  "context":  {
+        "cx_id": "123abc",
+         "target_activity": "migration",
+         "host_criticality": "medium"
+   }
+}

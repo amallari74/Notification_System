@@ -1,0 +1,16 @@
+---
+Groups:
+  MyTestAPI:
+    notification_key: xyz
+  ToolingSupport:
+    notification_key: xyz
+  DbOpsTier1:
+    notification_key: xyw
+NotificationKeys:
+  xyz:
+    type: pager_duty
+    integration_key: 03c37d15099d4e01c00ac5216533a2bc
+  xyw:
+    type: ocean
+    integration_key: 123456
+    # integration key talks to 1 pager duty service and sends messages to that service which propogates to slack
