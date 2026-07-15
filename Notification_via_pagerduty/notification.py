@@ -19,7 +19,8 @@ def parse_arguments():
       args_dict = vars(notif_parse.parse_args())
       print(f'arguments: {args_dict}\n')
       #file_path="/home/ammallar/.cookiecutters/cookiecutter-pypackage/notification/notification"
-      file_path="/var/tmp/work_dir/notif_tool/notification/notification"
+      #file_path="/var/tmp/work_dir/notif_tool/notification/notification"
+      filepath=os.path.dirname(os.path.abspath(__file__))
       l = os.listdir(file_path)
  
 
